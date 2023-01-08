@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: rgb(238, 174, 202);
+            background: -o-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        }
+        
+        #button_hesablaA {
+            width: 100px;
+            color: #ffff;
+            background: rgb(215, 90, 246);
+            background: -webkit-gradient(linear, left top, right top, from(rgba(215, 90, 246, 0.5)), to(rgba(251, 7, 77, 1)));
+            background: -o-linear-gradient(left, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            background: linear-gradient(90deg, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            padding: 5px;
+        }
+        
+        #button_hesablaB {
+            width: 100px;
+            color: #ffff;
+            background: rgb(215, 90, 246);
+            background: -webkit-gradient(linear, left top, right top, from(rgba(215, 90, 246, 0.5)), to(rgba(251, 7, 77, 1)));
+            background: -o-linear-gradient(left, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            background: linear-gradient(90deg, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            padding: 5px;
+        }
+        
+        #button_hesablaF {
+            width: 100px;
+            color: #ffff;
+            background: rgb(215, 90, 246);
+            background: -webkit-gradient(linear, left top, right top, from(rgba(215, 90, 246, 0.5)), to(rgba(251, 7, 77, 1)));
+            background: -o-linear-gradient(left, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            background: linear-gradient(90deg, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            padding: 5px;
+        }
+        
+        #button_hesablaY {
+            width: 100px;
+            color: #ffff;
+            background: rgb(215, 90, 246);
+            background: -webkit-gradient(linear, left top, right top, from(rgba(215, 90, 246, 0.5)), to(rgba(251, 7, 77, 1)));
+            background: -o-linear-gradient(left, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            background: linear-gradient(90deg, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            padding: 5px;
+        }
+        
+        .openpage23 {
+            display: none;
+        }
+        
+        h5 {
+            margin-top: 402px;
+            text-align: center;
+            color: rgb(1, 1, 13);
+        }
+        
+        .pageOpen23 {
+            background-color: black;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            opacity: 0.8;
+            margin-left: 30px;
+            right: 28px;
+            width: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            margin-top: 15px;
+        }
+        
+        #kutu {
+            background-color: #1d77a8;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 0 0 7px 0;
+            -webkit-animation-name: example;
+            animation-name: example;
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-iteration-count: 100000000000000000000000000000000;
+            animation-iteration-count: 100000000000000000000000000000000;
+        }
+        
+        @-webkit-keyframes example {
+            from {
+                background-color: rgb(224, 113, 113);
+            }
+            to {
+                background-color: rgb(141, 133, 230);
+            }
+        }
+        
+        @keyframes example {
+            from {
+                background-color: rgb(224, 113, 113);
+            }
+            to {
+                background-color: rgb(141, 133, 230);
+            }
+        }
+        
+        h1 {
+            color: rgb(28, 24, 24);
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        h1:hover {
+            color: rgb(247, 7, 135);
+        }
+        
+        h2 {
+            color: rgb(17, 18, 19);
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        input {
+            border: 10px;
+            color: #f1085f;
+            background-color: aliceblue;
+            border-radius: 5px;
+            font-size: 21px;
+            width: 230px;
+        }
+        
+        #button_hesabla {
+            width: 100px;
+            color: #ffff;
+            background: rgb(215, 90, 246);
+            background: -webkit-gradient(linear, left top, right top, from(rgba(215, 90, 246, 0.5)), to(rgba(251, 7, 77, 1)));
+            background: -o-linear-gradient(left, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            background: linear-gradient(90deg, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            padding: 5px;
+        }
+        
+        #button_hesabla1 {
+            width: 100px;
+            color: #ffff;
+            background: rgb(215, 90, 246);
+            background: -webkit-gradient(linear, left top, right top, from(rgba(215, 90, 246, 0.5)), to(rgba(251, 7, 77, 1)));
+            background: -o-linear-gradient(left, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            background: linear-gradient(90deg, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            padding: 5px;
+        }
+        
+        #button_hesabla2 {
+            width: 100px;
+            color: #ffff;
+            background: rgb(215, 90, 246);
+            background: -webkit-gradient(linear, left top, right top, from(rgba(215, 90, 246, 0.5)), to(rgba(251, 7, 77, 1)));
+            background: -o-linear-gradient(left, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            background: linear-gradient(90deg, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            padding: 5px;
+        }
+        
+        #button_hesabla3 {
+            width: 100px;
+            color: #ffff;
+            background: rgb(215, 90, 246);
+            background: -webkit-gradient(linear, left top, right top, from(rgba(215, 90, 246, 0.5)), to(rgba(251, 7, 77, 1)));
+            background: -o-linear-gradient(left, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            background: linear-gradient(90deg, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            padding: 5px;
+        }
+        
+        #button_hesabla4 {
+            width: 100px;
+            color: #ffff;
+            background: rgb(215, 90, 246);
+            background: -webkit-gradient(linear, left top, right top, from(rgba(215, 90, 246, 0.5)), to(rgba(251, 7, 77, 1)));
+            background: -o-linear-gradient(left, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            background: linear-gradient(90deg, rgba(215, 90, 246, 0.5) 0%, rgba(251, 7, 77, 1) 100%);
+            padding: 5px;
+        }
+        
+        p {
+            color: white;
+            font-size: 20px;
+        }
+        
+        td {
+            color: white;
+        }
+        
+        .open-button {
+            background-color: rgb(12, 11, 11);
+            color: rgb(245, 238, 238);
+            padding: 16px 20px;
+            border: 1px solid #00a5ff;
+            cursor: pointer;
+            opacity: 0.8;
+            margin-left: 30px;
+            right: 28px;
+            width: 280px;
+        }
+        
+        .open-button1 {
+            background-color: rgb(19, 19, 19);
+            color: rgb(247, 242, 242);
+            padding: 16px 20px;
+            border: 1px solid #00a5ff;
+            cursor: pointer;
+            opacity: 0.8;
+            margin-left: 30px;
+            right: 28px;
+            width: 280px;
+        }
+        
+        .open-button2 {
+            background-color: rgb(11, 11, 12);
+            color: rgb(254, 248, 248);
+            padding: 16px 20px;
+            border: 1px solid #00a5ff;
+            cursor: pointer;
+            opacity: 0.8;
+            margin-left: 30px;
+            right: 28px;
+            width: 280px;
+        }
+        
+        .open-button3 {
+            background-color: rgb(17, 16, 16);
+            color: rgb(249, 246, 246);
+            padding: 16px 20px;
+            border: 1px solid #00a5ff;
+            cursor: pointer;
+            opacity: 0.8;
+            margin-left: 30px;
+            right: 28px;
+            width: 280px;
+        }
+        
+        #bt13 {
+            background-color: rgb(252, 0, 0);
+            color: rgb(251, 244, 244);
+            width: 45px;
+            display: flex;
+            justify-content: center;
+            border-radius: 4px;
+            border: 1px solid black;
+            height: 23px;
+            text-align: center;
+            padding: 2px;
+            font-size: 15px;
+        }
+        
+        .open-button4 {
+            background-color: rgb(16, 16, 17);
+            color: rgb(250, 244, 244);
+            padding: 16px 20px;
+            border: 1px solid #00a5ff;
+            cursor: pointer;
+            opacity: 0.8;
+            margin-left: 30px;
+            right: 28px;
+            width: 280px;
+        }
+        /* The popup form - hidden by default */
+        
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+            z-index: 9;
+        }
+        /* Add styles to the form container */
+        /* Full-width input fields */
+        
+        .form-container input[type=text],
+        .form-container input[type=password] {
+            width: 87%;
+            border: none;
+            background: #f1f1f1;
+        }
+        /* When the inputs get focus, do something */
+        
+        .form-container input[type=text]:focus,
+        .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        /* Set a style for the submit/login button */
+        
+        .form-container .btn {
+            color: white;
+            padding: 16px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 25px;
+            opacity: 0.8;
+        }
+        /* Add a red background color to the cancel button */
+        
+        .form-container .cancel {
+            background-color: red;
+        }
+        /* Add some hover effects to buttons */
+        
+        .form-container .btn:hover,
+        .open-button:hover {
+            opacity: 1;
+        }
+        
+        .openpage1 {
+            display: none;
+        }
+        
+        .redmi1 {
+            background-color: rgb(250, 8, 137);
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            opacity: 0.8;
+            margin-left: 30px;
+            right: 28px;
+            width: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+        }
+        
+        .pageOpen {
+            background-color: rgb(250, 8, 44);
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            opacity: 0.8;
+            margin-left: 30px;
+            right: 28px;
+            width: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            margin-top: 15px;
+        }
+        
+        #bt {
+            background-color: rgb(246, 8, 8);
+            color: rgb(255, 253, 253);
+            width: 45px;
+            display: flex;
+            justify-content: center;
+            border-radius: 4px;
+            border: 1px solid black;
+            height: 20px;
+            text-align: center;
+            padding: 2px;
+            font-size: 15px;
+        }
+        
+        @media screen and (max-width: 360px) {
+            body {
+                overflow: scroll;
+            }
+            .form-popup {
+                overflow: scroll;
+                height: 100%;
+            }
+            #kutu {
+                overflow: scroll;
+            }
+            .form-container {
+                overflow: scroll;
+            }
+        }
+        
+        @media screen and (max-width: 600px) and (min-width: 300px) {
+            body {
+                overflow: scroll;
+            }
+            .form-popup {
+                overflow: scroll;
+                height: 100%;
+            }
+            #kutu {
+                overflow: scroll;
+                margin-top: 200px;
+            }
+            .form-container {
+                overflow: scroll;
+            }
+        }
+        
+        strong {
+            color: red;
+            font-size: 19px;
+        }
+        
+        h4 {
+            text-align: center;
+            color: #f1085f;
+            font-size: 20px;
+        }
+        
+        placeholder {
+            font-size: 9px;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+            border: none;
+            font-family: sans-serif;
+        }
+        
+        body {
+            background: rgb(161, 151, 151);
+        }
+        /* notes container */
+        
+        .title input {
+            display: flex;
+        }
+        
+        h6 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+    <h1>Xoş gəlmişsiniz.</h1>
+    <h3 id="h2"></h3>
+    <button class="pageOpen" id="px" onclick="openpage()">Yarımillik və İllik</button>
+
+
+
+
+    <!-- <h3 id="class">Şagirdlərin siyahısına baxmaq üçün <strong>"Siniflər"</strong>düyməsinə toxunun</h3>
+    <button type="button" disabled class="redmi1" id="cx" onclick="redmi()">Siniflər</button> -->
+    <!-- -----------------------------------ksq bsq hsblma----------------------------------------- -->
+    <div class="openpage1" id="Toform">
+        <!-- <h4>Müvafiq seçimi edin!</h4> -->
+        <button type="button" class="btn cancel1" id="bt" onclick="closePage()">Geri</button>
+        <button class="open-button" id="cv" onclick="openForm()">KSQ sayı "3" olduqda</button>
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <div id="kutu">
+                    <table>
+                        <tr>
+                            <td>KSQ:1</td>
+                            <td>
+                                <input type="number" id="S1" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:2</td>
+                            <td>
+                                <input type="number" id="S2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>KSQ:3</td>
+                            <td>
+                                <input type="number" id="S3" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>BSQ</td>
+                            <td>
+                                <input type="number" id="S7" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Hesabla" id="button_hesabla" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BAL:</td>
+                            <td>
+                                <span id="sonuc"></span>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                    <p id="demo">Qiymət:</p>
+                </div>
+
+
+
+
+
+
+
+                <button type="button" class="btn cancel" onclick="closeForm()">pəncərəni bağla</button>
+            </form>
+        </div>
+        <!-- -------------------------------------------KSQ 4 OLDUQDA------------------------------------ -->
+        <button class="open-button1" id="cd" onclick="openForm1()">KSQ sayı "4" olduqda</button>
+
+        <div class="form-popup" id="myForm1">
+            <form action="/action_page.php" class="form-container">
+                <div id="kutu">
+                    <table>
+                        <tr>
+                            <td>KSQ:1</td>
+                            <td>
+                                <input type="number" id="D1" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:2</td>
+                            <td>
+                                <input type="number" id="D2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>KSQ:3</td>
+                            <td>
+                                <input type="number" id="D3" c />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:4</td>
+                            <td>
+                                <input type="number" id="D4" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>BSQ</td>
+                            <td>
+                                <input type="number" id="D7" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Hesabla" id="button_hesabla1" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BAL:</td>
+                            <td>
+                                <span id="sonuc1"></span>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                    <p id="demo1">Qiymət:</p>
+                </div>
+
+
+
+
+
+
+
+                <button type="button" class="btn cancel" onclick="closeForm1()">pəncərəni bağla</button>
+            </form>
+        </div>
+
+        <!-- -------------------------------------------KSQ 5 OLDUQDA------------------------------------ -->
+
+        <button class="open-button2" id="cf" onclick="openForm2()">KSQ sayı "5" olduqda</button>
+
+        <div class="form-popup" id="myForm2">
+            <form action="/action_page.php" class="form-container">
+                <div id="kutu">
+                    <table>
+                        <tr>
+                            <td>KSQ:1</td>
+                            <td>
+                                <input type="number" id="C1" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:2</td>
+                            <td>
+                                <input type="number" id="C2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>KSQ:3</td>
+                            <td>
+                                <input type="number" id="C3" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:4</td>
+                            <td>
+                                <input type="number" id="C4" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:5</td>
+                            <td>
+                                <input type="number" id="C5" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>BSQ</td>
+                            <td>
+                                <input type="number" id="C7" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Hesabla" id="button_hesabla2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BAL:</td>
+                            <td>
+                                <span id="sonuc2"></span>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                    <p id="demo2">Qiymət:</p>
+                </div>
+
+                <button type="button" class="btn cancel" onclick="closeForm2()">pəncərəni bağla</button>
+            </form>
+        </div>
+
+
+        <!-- -------------------------------------------KSQ 6 OLDUQDA------------------------------------ -->
+
+        <button class="open-button3" id="ce" onclick="openForm3()">KSQ sayı "6" olduqda</button>
+
+        <div class="form-popup" id="myForm3">
+            <form action="/action_page.php" class="form-container">
+                <div id="kutu">
+                    <table>
+                        <tr>
+                            <td>KSQ:1</td>
+                            <td>
+                                <input type="number" id="T1" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:2</td>
+                            <td>
+                                <input type="number" id="T2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>KSQ:3</td>
+                            <td>
+                                <input type="number" id="T3" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:4</td>
+                            <td>
+                                <input type="number" id="T4" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:5</td>
+                            <td>
+                                <input type="number" id="T5" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:6</td>
+                            <td>
+                                <input type="number" id="T6" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>BSQ</td>
+                            <td>
+                                <input type="number" id="T7" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Hesabla" id="button_hesabla3" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BAL:</td>
+                            <td>
+                                <span id="sonuc3"></span>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                    <p id="demo3">Qiymət:</p>
+                </div>
+
+                <button type="button" class="btn cancel" onclick="closeForm3()">pəncərəni bağla</button>
+            </form>
+        </div>
+
+        <!-- -------------------------------------------KSQ 6 OLDUQDA------------------------------------ -->
+
+        <button class="open-button4" id="ca" onclick="openForm4()">İllik hesabla</button>
+
+        <div class="form-popup" id="myForm4">
+            <form action="/action_page.php" class="form-container">
+                <div id="kutu">
+                    <table>
+                        <tr>
+                            <td>1-ci yarımil balı</td>
+                            <td>
+                                <input type="number" id="O1" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2-ci yarımil balı</td>
+                            <td>
+                                <input type="number" id="O2" />
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Hesabla" id="button_hesabla4" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BAL:</td>
+                            <td>
+                                <span id="sonuc4"></span>
+                            </td>
+                        </tr>
+                    </table>
+                    <p id="demo4">Qiymət:</p>
+                </div>
+
+                <button type="button" class="btn cancel" onclick="closeForm4()">pəncərəni bağla</button>
+            </form>
+        </div>
+
+
+
+
+    </div>
+    <h3 id="h23"></h3>
+    <button class="pageOpen23" id="px23" onclick="openpage23()">ksq hesabla</button>
+    <!-- -----------------------------------ksq bsq hsblma 3----------------------------------------- -->
+    <div class="openpage23" id="Toform23">
+        <!-- <h4>Müvafiq seçimi edin!</h4> -->
+        <button type="button" class="btn cancel13" id="bt13" onclick="closePage13()">Geri</button>
+        <button class="open-button" id="cv13" onclick="openForm13()">KSQ sayı "3" olduqda</button>
+
+        <div class="form-popup" id="myForm13">
+            <form action="/action_page.php" class="form-container">
+                <div id="kutu">
+                    <table>
+                        <tr>
+                            <td>KSQ:1</td>
+                            <td>
+                                <input type="number" id="A1" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:2</td>
+                            <td>
+                                <input type="number" id="A2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>KSQ:3</td>
+                            <td>
+                                <input type="number" id="A3" />
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Hesabla" id="button_hesablaA" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BAL:</td>
+                            <td>
+                                <span id="sonucA"></span>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                    <p id="demoA">Qiymət:</p>
+                </div>
+
+                <button type="button" class="btn cancel" onclick="closeForm13()">pəncərəni bağla</button>
+            </form>
+        </div>
+        <!-- -------------------------------------------KSQ 4 OLDUQDA------------------------------------ -->
+        <button class="open-button1" id="cd14" onclick="openForm14()">KSQ sayı "4" olduqda</button>
+
+        <div class="form-popup" id="myForm14">
+            <form action="/action_page.php" class="form-container">
+                <div id="kutu">
+                    <table>
+                        <tr>
+                            <td>KSQ:1</td>
+                            <td>
+                                <input type="number" id="B1" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:2</td>
+                            <td>
+                                <input type="number" id="B2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>KSQ:3</td>
+                            <td>
+                                <input type="number" id="B3" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:4</td>
+                            <td>
+                                <input type="number" id="B4" />
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Hesabla" id="button_hesablaB" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BAL:</td>
+                            <td>
+                                <span id="sonucB"></span>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                    <p id="demoB">Qiymət:</p>
+                </div>
+
+                <button type="button" class="btn cancel" onclick="closeForm14()">pəncərəni bağla</button>
+            </form>
+        </div>
+
+        <!-- -------------------------------------------KSQ 5 OLDUQDA------------------------------------ -->
+
+        <button class="open-button2" id="cf15" onclick="openForm15()">KSQ sayı "5" olduqda</button>
+
+        <div class="form-popup" id="myForm15">
+            <form action="/action_page.php" class="form-container">
+                <div id="kutu">
+                    <table>
+                        <tr>
+                            <td>KSQ:1</td>
+                            <td>
+                                <input type="number" id="F1" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:2</td>
+                            <td>
+                                <input type="number" id="F2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>KSQ:3</td>
+                            <td>
+                                <input type="number" id="F3" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:4</td>
+                            <td>
+                                <input type="number" id="F4" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:5</td>
+                            <td>
+                                <input type="number" id="F5" />
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Hesabla" id="button_hesablaF" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BAL:</td>
+                            <td>
+                                <span id="sonucF"></span>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                    <p id="demoF">Qiymət:</p>
+                </div>
+
+                <button type="button" class="btn cancel" onclick="closeForm15()">pəncərəni bağla</button>
+            </form>
+        </div>
+
+
+        <!-- -------------------------------------------KSQ 6 OLDUQDA------------------------------------ -->
+
+        <button class="open-button3" id="ce16" onclick="openForm16()">KSQ sayı "6" olduqda</button>
+
+        <div class="form-popup" id="myForm16">
+            <form action="/action_page.php" class="form-container">
+                <div id="kutu">
+                    <table>
+                        <tr>
+                            <td>KSQ:1</td>
+                            <td>
+                                <input type="number" id="Y1" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:2</td>
+                            <td>
+                                <input type="number" id="Y2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>KSQ:3</td>
+                            <td>
+                                <input type="number" id="Y3" />
+                            </td>
+                        </tr>
+
+
+                        <td>KSQ:4</td>
+                        <td>
+                            <input type="number" id="Y4" />
+                        </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:5</td>
+                            <td>
+                                <input type="number" id="Y5" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>KSQ:6</td>
+                            <td>
+                                <input type="number" id="Y6" />
+                            </td>
+                        </tr>
+
+
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="button" value="Hesabla" id="button_hesablaY" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BAL:</td>
+                            <td>
+                                <span id="sonucY"></span>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+                    <p id="demoY">Qiymət:</p>
+                </div>
+
+                <button type="button" class="btn cancel" onclick="closeForm16()">pəncərəni bağla</button>
+            </form>
+        </div>
+
+
+
+
+
+
+    </div>
+    <footer>
+        <h5 id="abdul">Desinger Abdul Bagirzada</h5>
+    </footer>
+    <!-- ----------------------------------------------------ksq3-------------------------------------------------------------------------------- -->
+    <script>
+        let btnHesapla = document.getElementById('button_hesabla');
+        btnHesapla.onclick = function(e) {
+            let s1 = document.getElementById('S1');
+            let s2 = document.getElementById('S2');
+            let s3 = document.getElementById('S3');
+            let s7 = document.getElementById('S7');
+
+            let toplam = (parseInt(s1.value) + parseInt(s2.value) + parseInt(s3.value)) / 3 * (40 / 100) + (parseInt(s7.value)) * 60 / 100;
+            let s = document.getElementById('sonuc')
+            s.innerText = toplam
+
+            let kox = toplam;
+
+            let qiymet;
+            if (kox < 30, kox == 30) {
+                qiymet = "qiymət:2"
+            } else if (kox > 30, kox == 60, kox < 61) {
+                qiymet = "qiymət:3";
+            } else if (kox < 61, kox < 81) {
+                qiymet = "qiymət:4";
+            } else if (kox > 81, kox < 100) {
+                qiymet = "qiymət:5";
+            } else if (kox == 100) {
+                qiymet = "qiymət:5";
+            } else {
+                qiymet = "bos xanalari doldurun";
+            }
+            document.getElementById("demo").innerHTML = qiymet;
+
+        };
+
+        // -----------------------------------------------------ksq 4 ucun---------------------------------------------
+
+        let btnHesapla1 = document.getElementById('button_hesabla1');
+        btnHesapla1.onclick = function(e) {
+            let d1 = document.getElementById('D1');
+            let d2 = document.getElementById('D2');
+            let d3 = document.getElementById('D3');
+            let d4 = document.getElementById('D4');
+            let d7 = document.getElementById('D7');
+
+            let toplam1 = (parseInt(d1.value) + parseInt(d2.value) + parseInt(d3.value) + parseInt(d4.value)) / 4 * (40 / 100) + (parseInt(d7.value)) * 60 / 100;
+            let d = document.getElementById('sonuc1')
+            d.innerText = toplam1
+
+            let koxx = toplam1;
+
+            let qiymet1;
+            if (koxx < 30, koxx == 30) {
+                qiymet1 = "qiymət:2"
+            } else if (koxx > 30, koxx == 60, koxx < 61) {
+                qiymet1 = "qiymət:3";
+            } else if (koxx < 61, koxx < 81) {
+                qiymet1 = "qiymət:4";
+            } else if (koxx < 81, koxx < 100) {
+                qiymet1 = "qiymət:5";
+            } else if (koxx == 100) {
+                qiymet1 = "qiymət:5";
+            } else {
+                qiymet1 = "boş xanaları doldurun";
+            }
+            document.getElementById("demo1").innerHTML = qiymet1;
+
+        };
+
+        // ---------------------------------------ksq 5 ucun---------------------------------------
+        let btnHesapla2 = document.getElementById('button_hesabla2');
+        btnHesapla2.onclick = function(e) {
+            let c1 = document.getElementById('C1');
+            let c2 = document.getElementById('C2');
+            let c3 = document.getElementById('C3');
+            let c4 = document.getElementById('C4');
+            let c5 = document.getElementById('C5');
+            let c7 = document.getElementById('C7');
+
+            let toplam2 = (parseInt(c1.value) + parseInt(c2.value) + parseInt(c3.value) + parseInt(c4.value) + parseInt(c5.value)) / 5 * (40 / 100) + (parseInt(c7.value)) * 60 / 100;
+            let m = document.getElementById('sonuc2')
+            m.innerText = toplam2
+
+            let koxx1 = toplam2;
+
+            let qiymet2;
+            if (koxx1 < 30, koxx1 == 30) {
+                qiymet2 = "qiymət:2"
+            } else if (koxx1 > 30, koxx1 == 60, koxx1 < 61) {
+                qiymet2 = "qiymət:3";
+            } else if (koxx1 < 61, koxx1 < 81) {
+                qiymet2 = "qiymət:4";
+            } else if (koxx1 < 81, koxx1 < 100) {
+                qiymet2 = "qiymət:5";
+            } else if (koxx1 == 100) {
+                qiymet2 = "qiymət:5";
+            } else {
+                qiymet2 = "boş xanaları doldurun";
+
+            }
+            document.getElementById("demo2").innerHTML = qiymet2;
+
+
+
+        };
+
+        // -------------------------------------------------ksq 6-----------------------
+        let btnHesapla3 = document.getElementById('button_hesabla3');
+        btnHesapla3.onclick = function(e) {
+            let t1 = document.getElementById('T1');
+            let t2 = document.getElementById('T2');
+            let t3 = document.getElementById('T3');
+            let t4 = document.getElementById('T4');
+            let t5 = document.getElementById('T5');
+            let t6 = document.getElementById('T6');
+            let t7 = document.getElementById('T7');
+
+            let toplam3 = (parseInt(t1.value) + parseInt(t2.value) + parseInt(t3.value) + parseInt(t4.value) + parseInt(t5.value) + parseInt(t6.value)) / 6 * (40 / 100) + (parseInt(t7.value)) * 60 / 100;
+            let n = document.getElementById('sonuc3')
+            n.innerText = toplam3
+
+            let koxx3 = toplam3;
+
+            let qiymet3;
+            if (koxx3 < 30, koxx3 == 30) {
+                qiymet3 = "qiymət:2"
+            } else if (koxx3 > 30, koxx3 == 60, koxx3 < 61) {
+                qiymet3 = "qiymət:3";
+            } else if (koxx3 < 61, koxx3 < 81) {
+                qiymet3 = "qiymət:4";
+            } else if (koxx3 < 81, koxx3 < 100) {
+                qiymet3 = "qiymət:5";
+            } else if (koxx3 == 100) {
+                qiymet3 = "qiymət:5";
+            } else {
+                qiymet3 = "boş xanaları doldurun";
+            }
+            document.getElementById("demo3").innerHTML = qiymet3;
+
+        };
+        // -------------------------------------------------ksq 6-----------------------
+        let btnHesapla4 = document.getElementById('button_hesabla4');
+        btnHesapla4.onclick = function(e) {
+            let o1 = document.getElementById('O1');
+            let o2 = document.getElementById('O2');
+
+
+            let toplam4 = (parseInt(o1.value) + parseInt(o2.value)) / 2;
+            let q = document.getElementById('sonuc4')
+            q.innerText = toplam4
+
+            let koxx4 = toplam4;
+
+            let qiymet4;
+            if (koxx4 < 30, koxx4 == 30) {
+                qiymet4 = "qiymət:2"
+            } else if (koxx4 > 30, koxx4 == 60, koxx4 < 61) {
+                qiymet4 = "qiymət:3";
+            } else if (koxx4 > 61, koxx4 < 81) {
+                qiymet4 = "qiymət:4";
+            } else if (koxx4 < 81, koxx4 < 100) {
+                qiymet4 = "qiymət:5";
+            } else if (koxx4 == 100) {
+                qiymet4 = "qiymət:5";
+            } else {
+                qiymet4 = "boş xanaları doldurun";
+            }
+            document.getElementById("demo4").innerHTML = qiymet4;
+
+        };
+
+
+
+        // <!-- ------------------------------------------ ------------------------------------ -->
+        function redmi() {
+            document.getElementById("lerik1").style.display = "block";
+        }
+
+        function closeFormm() {
+            document.getElementById("lerik1").style.display = "none";
+        }
+
+
+
+
+
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            document.getElementById("bt").style.display = "none";
+            document.getElementById("cv").style.display = "none";
+            document.getElementById("cd").style.display = "none";
+            document.getElementById("cf").style.display = "none";
+            document.getElementById("ce").style.display = "none";
+            document.getElementById("ca").style.display = "none";
+            document.getElementById("cx").style.display = "none";
+            document.getElementById("class").style.display = "none";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            document.getElementById("bt").style.display = "block";
+            document.getElementById("cv").style.display = "block";
+            document.getElementById("cd").style.display = "block";
+            document.getElementById("cf").style.display = "block";
+            document.getElementById("ce").style.display = "block";
+            document.getElementById("ca").style.display = "block";
+            document.getElementById("cx").style.display = "block";
+            document.getElementById("class").style.display = "block";
+
+
+
+
+
+        }
+
+        function openForm1() {
+            document.getElementById("myForm1").style.display = "block";
+            document.getElementById("bt").style.display = "none";
+            document.getElementById("cv").style.display = "none";
+            document.getElementById("cd").style.display = "none";
+            document.getElementById("cf").style.display = "none";
+            document.getElementById("ce").style.display = "none";
+            document.getElementById("ca").style.display = "none";
+            document.getElementById("cx").style.display = "none";
+            document.getElementById("class").style.display = "none";
+
+        }
+
+        function closeForm1() {
+            document.getElementById("myForm1").style.display = "none";
+            document.getElementById("bt").style.display = "block";
+            document.getElementById("cv").style.display = "block";
+            document.getElementById("cd").style.display = "block";
+            document.getElementById("cf").style.display = "block";
+            document.getElementById("ce").style.display = "block";
+            document.getElementById("ca").style.display = "block";
+            document.getElementById("cx").style.display = "block";
+            document.getElementById("class").style.display = "block";
+        }
+
+        function openForm2() {
+            document.getElementById("myForm2").style.display = "block";
+            document.getElementById("bt").style.display = "none";
+            document.getElementById("cv").style.display = "none";
+            document.getElementById("cd").style.display = "none";
+            document.getElementById("cf").style.display = "none";
+            document.getElementById("ce").style.display = "none";
+            document.getElementById("ca").style.display = "none";
+            document.getElementById("cx").style.display = "none";
+            document.getElementById("class").style.display = "none";
+        }
+
+        function closeForm2() {
+            document.getElementById("myForm2").style.display = "none";
+            document.getElementById("bt").style.display = "block";
+            document.getElementById("cv").style.display = "block";
+            document.getElementById("cd").style.display = "block";
+            document.getElementById("cf").style.display = "block";
+            document.getElementById("ce").style.display = "block";
+            document.getElementById("ca").style.display = "block";
+            document.getElementById("cx").style.display = "block";
+            document.getElementById("class").style.display = "block";
+        }
+
+        function openForm3() {
+            document.getElementById("myForm3").style.display = "block";
+            document.getElementById("bt").style.display = "none";
+            document.getElementById("cv").style.display = "none";
+            document.getElementById("cd").style.display = "none";
+            document.getElementById("cf").style.display = "none";
+            document.getElementById("ce").style.display = "none";
+            document.getElementById("ca").style.display = "none";
+            document.getElementById("cx").style.display = "none";
+            document.getElementById("class").style.display = "none";
+        }
+
+        function closeForm3() {
+            document.getElementById("myForm3").style.display = "none";
+            document.getElementById("bt").style.display = "block";
+            document.getElementById("cv").style.display = "block";
+            document.getElementById("cd").style.display = "block";
+            document.getElementById("cf").style.display = "block";
+            document.getElementById("ce").style.display = "block";
+            document.getElementById("ca").style.display = "block";
+            document.getElementById("cx").style.display = "block";
+            document.getElementById("class").style.display = "block";
+        }
+
+        function openForm4() {
+            document.getElementById("myForm4").style.display = "block";
+            document.getElementById("bt").style.display = "none";
+            document.getElementById("cv").style.display = "none";
+            document.getElementById("cd").style.display = "none";
+            document.getElementById("cf").style.display = "none";
+            document.getElementById("ce").style.display = "none";
+            document.getElementById("ca").style.display = "none";
+            document.getElementById("cx").style.display = "none";
+            document.getElementById("class").style.display = "none";
+        }
+
+        function closeForm4() {
+            document.getElementById("myForm4").style.display = "none";
+            document.getElementById("bt").style.display = "block";
+            document.getElementById("cv").style.display = "block";
+            document.getElementById("cd").style.display = "block";
+            document.getElementById("cf").style.display = "block";
+            document.getElementById("ce").style.display = "block";
+            document.getElementById("ca").style.display = "block";
+            document.getElementById("cx").style.display = "block";
+            document.getElementById("class").style.display = "block";
+
+
+
+        }
+
+        function openpage() {
+            document.getElementById("Toform").style.display = "block";
+            document.getElementById("px").style.display = "none";
+            document.getElementById("h2").style.display = "none";
+            document.getElementById("px23").style.display = "none";
+            document.getElementById("abdul").style.display = "none";
+        }
+
+        function closePage() {
+            document.getElementById("Toform").style.display = "none";
+            document.getElementById("px").style.display = "block";
+            document.getElementById("h2").style.display = "block";
+            document.getElementById("px23").style.display = "block";
+            document.getElementById("abdul").style.display = "block";
+        }
+
+
+
+
+
+
+        let btnHesapla55 = document.getElementById('button_hesablaA');
+        btnHesapla55.onclick = function(e) {
+            let a1 = document.getElementById('A1');
+            let a2 = document.getElementById('A2');
+            let a3 = document.getElementById('A3');
+
+
+            let toplamA = (parseInt(a1.value) + parseInt(a2.value) + parseInt(a3.value)) / 3;
+            let a = document.getElementById('sonucA')
+            a.innerText = toplamA
+
+            let koxA = toplamA;
+
+            let qiymetA;
+            if (koxA < 30, koxA == 30) {
+                qiymetA = "qiymət:2"
+            } else if (koxA > 30, koxA == 60, koxA < 61) {
+                qiymetA = "qiymət:3";
+            } else if (koxA < 61, koxA < 81) {
+                qiymetA = "qiymət:4";
+            } else if (koxA > 81, koxA < 100) {
+                qiymetA = "qiymət:5";
+            } else if (koxA == 100) {
+                qiymetA = "qiymət:5";
+            } else {
+                qiymetA = "bos xanalari doldurun";
+            }
+            document.getElementById("demoA").innerHTML = qiymetA;
+
+        };
+
+        // -----------------------------------------------------ksq 4 ucun---------------------------------------------
+
+        let btnHesapla66 = document.getElementById('button_hesablaB');
+        btnHesapla66.onclick = function(e) {
+            let b1 = document.getElementById('B1');
+            let b2 = document.getElementById('B2');
+            let b3 = document.getElementById('B3');
+            let b4 = document.getElementById('B4');
+
+
+            let toplamb = (parseInt(b1.value) + parseInt(b2.value) + parseInt(b3.value) + parseInt(b4.value)) / 4;
+            let b = document.getElementById('sonucB')
+            b.innerText = toplamb
+
+            let koxxb = toplamb;
+
+            let qiymetb;
+            if (koxxb < 30, koxxb == 30) {
+                qiymetb = "qiymət:2"
+            } else if (koxxb > 30, koxxb == 60, koxxb < 61) {
+                qiymetb = "qiymət:3";
+            } else if (koxxb < 61, koxxb < 81) {
+                qiymetb = "qiymət:4";
+            } else if (koxxb < 81, koxxb < 100) {
+                qiymetb = "qiymət:5";
+            } else if (koxxb == 100) {
+                qiymetb == "qiymət:5";
+            } else {
+                qiymetb = "bos xanalari doldurun";
+            }
+            document.getElementById("demoB").innerHTML = qiymetb;
+
+        };
+
+        // ---------------------------------------ksq 5 ucun---------------------------------------
+        let btnHesapla77 = document.getElementById('button_hesablaF');
+        btnHesapla77.onclick = function(e) {
+            let f1 = document.getElementById('F1');
+            let f2 = document.getElementById('F2');
+            let f3 = document.getElementById('F3');
+            let f4 = document.getElementById('F4');
+            let f5 = document.getElementById('F5');
+
+
+            let toplamf = (parseInt(f1.value) + parseInt(f2.value) + parseInt(f3.value) + parseInt(f4.value) + parseInt(f5.value)) / 5;
+            let f = document.getElementById('sonucF')
+            f.innerText = toplamf
+
+            let koxxf = toplamf;
+
+            let qiymetf;
+            if (koxxf < 30, koxxf == 30) {
+                qiymetf = "qiymət:2"
+            } else if (koxxf > 30, koxxf == 60, koxxf < 61) {
+                qiymetf = "qiymət:3";
+            } else if (koxxf < 61, koxxf < 81) {
+                qiymetf = "qiymət:4";
+            } else if (koxxf < 81, koxxf < 100) {
+                qiymetf = "qiymət:5";
+            } else if (koxxf == 100) {
+                qiymetf = "qiymət:5";
+            } else {
+                qiymetf = "bos xanalari doldurun";
+            }
+            document.getElementById("demoF").innerHTML = qiymetf;
+
+        };
+
+        // -------------------------------------------------ksq 6-----------------------
+        let btnHesapla88 = document.getElementById('button_hesablaY');
+        btnHesapla88.onclick = function(e) {
+            let y1 = document.getElementById('Y1');
+            let y2 = document.getElementById('Y2');
+            let y3 = document.getElementById('Y3');
+            let y4 = document.getElementById('Y4');
+            let y5 = document.getElementById('Y5');
+            let y6 = document.getElementById('Y6');
+
+
+            let toplamy = (parseInt(y1.value) + parseInt(y2.value) + parseInt(y3.value) + parseInt(y4.value) + parseInt(y5.value) + parseInt(y6.value)) / 6;
+            let y = document.getElementById('sonucY')
+            y.innerText = toplamy
+
+            let koxxy = toplamy;
+
+            let qiymety;
+            if (koxxy < 30, koxxy == 30) {
+                qiymety = "qiymət:2"
+            } else if (koxxy > 30, koxxy == 60, koxxy < 61) {
+                qiymety = "qiymət:3";
+            } else if (koxxy < 61, koxxy < 81) {
+                qiymety = "qiymət:4";
+            } else if (koxxy < 81, koxxy < 100) {
+                qiymety = "qiymət:5";
+            } else if (koxxy == 100) {
+                qiymety = "qiymət:5";
+            } else {
+                qiymety = "bos xanalari doldurun";
+            }
+            document.getElementById("demoY").innerHTML = qiymety;
+
+        };
+        // -------------------------------------------------ksq 6-----------------------
+
+
+
+        function openForm13() {
+            document.getElementById("myForm13").style.display = "block";
+            document.getElementById("bt13").style.display = "none";
+            document.getElementById("cv13").style.display = "none";
+            document.getElementById("cd14").style.display = "none";
+            document.getElementById("cf15").style.display = "none";
+            document.getElementById("ce16").style.display = "none";
+            document.getElementById("ca").style.display = "none";
+            document.getElementById("cx").style.display = "none";
+            document.getElementById("class").style.display = "none";
+        }
+
+        function closeForm13() {
+            document.getElementById("myForm13").style.display = "none";
+            document.getElementById("bt13").style.display = "block";
+            document.getElementById("cv13").style.display = "block";
+            document.getElementById("cd14").style.display = "block";
+            document.getElementById("cf15").style.display = "block";
+            document.getElementById("ce16").style.display = "block";
+            document.getElementById("ca").style.display = "block";
+            document.getElementById("cx").style.display = "block";
+            document.getElementById("class").style.display = "block";
+
+
+
+
+
+        }
+
+        function openForm14() {
+            document.getElementById("myForm14").style.display = "block";
+            document.getElementById("bt13").style.display = "none";
+            document.getElementById("cv13").style.display = "none";
+            document.getElementById("cd14").style.display = "none";
+            document.getElementById("cf15").style.display = "none";
+            document.getElementById("ce16").style.display = "none";
+            document.getElementById("ca").style.display = "none";
+            document.getElementById("cx").style.display = "none";
+            document.getElementById("class").style.display = "none";
+
+        }
+
+        function closeForm14() {
+            document.getElementById("myForm14").style.display = "none";
+            document.getElementById("bt13").style.display = "block";
+            document.getElementById("cv13").style.display = "block";
+            document.getElementById("cd14").style.display = "block";
+            document.getElementById("cf15").style.display = "block";
+            document.getElementById("ce16").style.display = "block";
+            document.getElementById("ca").style.display = "block";
+            document.getElementById("cx").style.display = "block";
+            document.getElementById("class").style.display = "block";
+        }
+
+        function openForm15() {
+            document.getElementById("myForm15").style.display = "block";
+            document.getElementById("bt13").style.display = "none";
+            document.getElementById("cv13").style.display = "none";
+            document.getElementById("cd14").style.display = "none";
+            document.getElementById("cf15").style.display = "none";
+            document.getElementById("ce16").style.display = "none";
+            document.getElementById("ca").style.display = "none";
+            document.getElementById("cx").style.display = "none";
+            document.getElementById("class").style.display = "none";
+        }
+
+        function closeForm15() {
+            document.getElementById("myForm15").style.display = "none";
+            document.getElementById("bt13").style.display = "block";
+            document.getElementById("cv13").style.display = "block";
+            document.getElementById("cd14").style.display = "block";
+            document.getElementById("cf15").style.display = "block";
+            document.getElementById("ce16").style.display = "block";
+            document.getElementById("ca").style.display = "block";
+            document.getElementById("cx").style.display = "block";
+            document.getElementById("class").style.display = "block";
+        }
+
+        function openForm16() {
+            document.getElementById("myForm16").style.display = "block";
+            document.getElementById("bt13").style.display = "none";
+            document.getElementById("cv13").style.display = "none";
+            document.getElementById("cd14").style.display = "none";
+            document.getElementById("cf15").style.display = "none";
+            document.getElementById("ce16").style.display = "none";
+            document.getElementById("ca").style.display = "none";
+            document.getElementById("cx").style.display = "none";
+            document.getElementById("class").style.display = "none";
+        }
+
+        function closeForm16() {
+            document.getElementById("myForm16").style.display = "none";
+            document.getElementById("bt13").style.display = "block";
+            document.getElementById("cv13").style.display = "block";
+            document.getElementById("cd14").style.display = "block";
+            document.getElementById("cf15").style.display = "block";
+            document.getElementById("ce16").style.display = "block";
+            document.getElementById("ca").style.display = "block";
+            document.getElementById("cx").style.display = "block";
+            document.getElementById("class").style.display = "block";
+        }
+
+
+
+
+
+
+        function openpage23() {
+            document.getElementById("Toform23").style.display = "block";
+
+            document.getElementById("px23").style.display = "none";
+            document.getElementById("h23").style.display = "none";
+            document.getElementById("px").style.display = "none";
+            document.getElementById("abdul").style.display = "none";
+        }
+
+        function closePage13() {
+            document.getElementById("Toform23").style.display = "none";
+            document.getElementById("px23").style.display = "block";
+            document.getElementById("h23").style.display = "block";
+            document.getElementById("px").style.display = "block";
+            document.getElementById("abdul").style.display = "block";
+
+        }
+    </script>
+
+</body>
+
+</html>
